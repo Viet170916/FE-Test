@@ -9,7 +9,7 @@ import DashboardPage from "../../views/admin/page/dashboard";
 
 const adminRoutes: RouteObject = {
   Component: AdminLayout as ComponentType<any>,
-  path: "admin",
+  path: "",
   children: [
     {
       path: "dashboard",
