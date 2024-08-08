@@ -9,7 +9,6 @@ interface DashboardPageProps{
 
 const DashboardPage: FC = React.memo(
   function( props: DashboardPageProps ): ReactNode{
-    // console.log(location.pathname);
     const location = useLocation();
     const sx = ( endpoint: string ) => ( {
       ...( location.pathname.includes( ( "/admin/dashboard" ) + "/" + endpoint ) && {

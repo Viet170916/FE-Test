@@ -26,7 +26,7 @@ const MODAL_STYLE = {
 // interface PostManagementPageProps{
 // }
 
-const PostManagementPage: NamedExoticComponent<PostManagementPageProps> = React.memo(
+const PostManagementPage: NamedExoticComponent = React.memo(
   function( ): ReactNode{
     const [ viewedPostId, setViewedPostId ] = useState<number>();
     const [ postData, setPostData ] = useState<IPostResponse>();

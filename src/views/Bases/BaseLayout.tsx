@@ -1,12 +1,13 @@
-import { FC, memo } from "react";
+import { FC, memo, NamedExoticComponent } from "react";
+import { Outlet } from "react-router-dom";
 
 interface IProps{
   children: FC;
 }
 
-const BaseLayout = memo(
+const BaseLayout: NamedExoticComponent<IProps> = memo(
   function( props: IProps ){
-    return ( <>{ props.children }</> );
+    return ( <><Outlet/></> );
   }
 );
 export default BaseLayout;
