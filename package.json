@@ -3,14 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://viet170916.github.io/FE-Test/",
+  "homepage": "https://viet170916.github.io/FE-Test/",
   "scripts": {
+    "start": "node public/dist/assets/index-hLez-j_-.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public/dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -22,8 +23,6 @@
     "@mui/x-charts": "^7.12.0",
     "@mui/x-date-pickers": "^7.12.0",
     "@reduxjs/toolkit": "^2.2.7",
-    "@types/tinycolor2": "^1.4.6",
-    "@types/validator": "^13.12.0",
     "antd": "^5.20.0",
     "dayjs": "^1.11.12",
     "material-react-table": "^2.13.1",
@@ -44,6 +43,8 @@
   "devDependencies": {
     "@types/node": "^22.1.0",
     "@types/react": "^18.3.3",
+    "@types/tinycolor2": "^1.4.6",
+    "@types/validator": "^13.12.0",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",

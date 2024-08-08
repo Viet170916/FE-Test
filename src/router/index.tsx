@@ -7,7 +7,7 @@ import _routes from "./routes";
 const router = createBrowserRouter( [
   ...middlewares,
   {
-    path: "/admin",
+    path: "admin",
     Component(){
       useAdminRedirect();
       return <div className={ "app-container" }><Outlet/></div>;
