@@ -1,6 +1,6 @@
-import { IPostResponse } from "@/helpers/Interfaces/ipost.interface.ts";
-import { useGetPostsQuery } from "@/redux/services/apis/post.ts";
-import { colsConfig } from "@/views/admin/page/postManagement/Table/ColsConfig.tsx";
+import { IPostResponse } from "$/helpers/Interfaces/ipost.interface.ts";
+import { useGetPostsQuery } from "$/redux/services/apis/post.ts";
+import { colsConfig } from "$/views/admin/page/postManagement/Table/ColsConfig.tsx";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { MaterialReactTable, MRT_Row, useMaterialReactTable } from "material-react-table";

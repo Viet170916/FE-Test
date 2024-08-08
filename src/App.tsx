@@ -1,6 +1,7 @@
 import "./App.scss";
+import AppRouter from "$/router";
 import { Toaster } from "sonner";
-import AppRouter from "./router";
+// import AppRouter from "./router";
 
 function App(){
 

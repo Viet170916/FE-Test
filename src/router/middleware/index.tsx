@@ -1,4 +1,4 @@
-import { AminRedirect } from "@/router/middleware/Redirect.tsx";
+import { AminRedirect } from "$/router/middleware/Redirect.tsx";
 import { RouteObject } from "react-router-dom";
 
 export const middlewares: RouteObject[] = [ {

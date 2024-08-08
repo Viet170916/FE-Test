@@ -1,5 +1,4 @@
-"use client";
-import { MobileNav } from "@/components/admin/layout/mobile-nav.tsx";
+import { MobileNav } from "$/components/admin/layout/mobile-nav.tsx";
 import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";

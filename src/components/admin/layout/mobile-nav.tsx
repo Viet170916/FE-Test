@@ -1,5 +1,5 @@
-import { navItems } from "@/components/admin/layout/config.ts";
-import { RenderNavItems } from "@/components/admin/layout/side-nav.tsx";
+import { navItems } from "$/components/admin/layout/config.ts";
+import { RenderNavItems } from "$/components/admin/layout/side-nav.tsx";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";

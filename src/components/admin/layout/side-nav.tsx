@@ -1,4 +1,4 @@
-import { INavItem, navItems } from "@/components/admin/layout/config.ts";
+import { INavItem, navItems } from "$/components/admin/layout/config.ts";
 import { memo, NamedExoticComponent } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";

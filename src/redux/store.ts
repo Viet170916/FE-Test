@@ -1,6 +1,6 @@
 import { configureStore, ThunkDispatch } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { postAPIMiddleware, postAPIPath, postAPIReducer } from "@/redux/services/apis/post.ts";
+import { postAPIMiddleware, postAPIPath, postAPIReducer } from "$/redux/services/apis/post.ts";
 
 export const store = configureStore( {
   reducer: {

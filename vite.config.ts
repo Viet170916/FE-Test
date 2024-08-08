@@ -7,22 +7,18 @@ export default defineConfig( {
     include: [
       "@emotion/react",
       "@emotion/styled",
-      "@mui/material/Tooltip"
+      "@mui"
     ],
   },
-  plugins: [ react({
-    jsxImportSource: '@emotion/react',
+  plugins: [ react( {
+    jsxImportSource: "@emotion/react",
     babel: {
-      plugins: ['@emotion/babel-plugin'],
+      plugins: [ "@emotion/babel-plugin" ],
     },
-  }) ],
+  } ) ],
   resolve: {
     alias: {
-      "@": path.resolve( __dirname, "src" ),
+      "$": path.resolve( __dirname, "src" ),
     },
   },
-  build: {
-    sourcemap: true,
-    outDir: 'dist'
-  }
 } );

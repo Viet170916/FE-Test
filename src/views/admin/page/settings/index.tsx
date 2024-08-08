@@ -1,5 +1,5 @@
-import { deepEqual } from "@/helpers/utils/obj.ts";
-import { validateEmail } from "@/helpers/utils/validation.ts";
+import { deepEqual } from "$/helpers/utils/obj.ts";
+import { validateEmail } from "$/helpers/utils/validation.ts";
 import { Box, Container, TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import InputLabel from "@mui/material/InputLabel";
@@ -19,21 +19,21 @@ import React, {
   useState
 } from "react";
 import { useForm } from "react-hook-form";
-import { ISettings } from "@/helpers/Interfaces/isettings.interface.ts";
-
+import { ISettings } from "$/helpers/Interfaces/isettings.interface.ts";
+// interface RangePickerProps{
+//   defaultValue?: [ dayjs.Dayjs, dayjs.Dayjs ],
+//   style?: { width: string; height: string },
+//   onChange?: ( [ startDate, endDate ]: readonly [ any, any ], dateString: string[] ) => void
+// }
 interface RangePickerProps{
-  defaultValue?: [ dayjs.Dayjs, dayjs.Dayjs ],
-  style?: { width: string; height: string },
-  onChange?: ( [ startDate, endDate ]: readonly [ any, any ], dateString: string[] ) => void
+  defaultValue?: [ dayjs.Dayjs, dayjs.Dayjs ] | undefined;
 }
 
 const { RangePicker }: DatePickerType = DatePicker;
-
-interface SettingsPageProps{
-}
-
+// interface SettingsPageProps{
+// }
 const SettingsPage: FC = React.memo(
-  function( props: SettingsPageProps ): ReactNode{
+  function(): ReactNode{
     const settings: ISettings = JSON.parse( window.localStorage[ "settingData" ] ?? "{}" );
     const {
       handleSubmit,

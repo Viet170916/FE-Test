@@ -1,10 +1,11 @@
-import { useAdminRedirect } from "@/hooks/middleware.ts";
-import { middlewares } from "@/router/middleware";
+import { useAdminRedirect } from "$/hooks/middleware.ts";
+import { middlewares } from "$/router/middleware";
+import { Box } from "@mui/material";
 import { memo, FC, NamedExoticComponent } from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { RouterProvider, Outlet, createHashRouter, } from "react-router-dom";
 import _routes from "./routes";
 
-const router = createBrowserRouter( [
+const router = createHashRouter( [
   ...middlewares,
   {
     path: "admin",
@@ -18,7 +19,9 @@ const router = createBrowserRouter( [
 const AppRouter: FC | NamedExoticComponent = memo(
   function(){
     return ( <>
-      <RouterProvider router={ router }/>
+      <Box>
+        <RouterProvider router={ router }/>
+      </Box>
     </> );
   }
 );

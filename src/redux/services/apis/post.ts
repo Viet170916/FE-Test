@@ -1,4 +1,4 @@
-import { IPostResponse } from "@/helpers/Interfaces/ipost.interface.ts";
+import { IPostResponse } from "$/helpers/Interfaces/ipost.interface.ts";
 import { BaseQueryFn, createApi, FetchArgs, fetchBaseQuery, FetchBaseQueryError } from "@reduxjs/toolkit/query/react";
 import queryString from "query-string";
 

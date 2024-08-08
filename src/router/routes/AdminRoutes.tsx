@@ -1,7 +1,7 @@
-import RevenuePage from "@/views/admin/page/dashboard/Revenue";
-import SubscriptionPage from "@/views/admin/page/dashboard/Subscription";
-import PostManagementPage from "@/views/admin/page/postManagement";
-import SettingsPage from "@/views/admin/page/settings";
+import RevenuePage from "$/views/admin/page/dashboard/Revenue";
+import SubscriptionPage from "$/views/admin/page/dashboard/Subscription";
+import PostManagementPage from "$/views/admin/page/postManagement";
+import SettingsPage from "$/views/admin/page/settings";
 import { ComponentType } from "react";
 import { RouteObject } from "react-router-dom";
 import AdminLayout from "../../views/admin/layout";
@@ -17,14 +17,17 @@ const adminRoutes: RouteObject = {
       children: [ {
         path: "subscription",
         Component: SubscriptionPage as ComponentType<any>,
-      }, {
+      },
+        {
         path: "revenue",
         Component: RevenuePage as ComponentType<any>,
       } ]
-    }, {
+    },
+    {
       path: "posts",
       Component: PostManagementPage as ComponentType<any>,
-    }, {
+    },
+    {
       path: "settings",
       Component: SettingsPage as ComponentType<any>,
     },

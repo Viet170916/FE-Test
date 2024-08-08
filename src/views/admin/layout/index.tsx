@@ -1,15 +1,15 @@
-import { MainNav } from "@/components/admin/layout/main-nav.tsx";
-import { SideNav } from "@/components/admin/layout/side-nav.tsx";
+import { MainNav } from "$/components/admin/layout/main-nav.tsx";
+import { SideNav } from "$/components/admin/layout/side-nav.tsx";
 import { Box, Container, GlobalStyles } from "@mui/material";
-import { FC, memo, ReactNode } from "react";
+import { FC, memo } from "react";
 import { Outlet } from "react-router-dom";
 
-interface AdminLayoutProps{
-  children?: ReactNode;
-}
+// interface AdminLayoutProps{
+//   children?: ReactNode;
+// }
 
 const AdminLayout: FC = memo(
-  function( props: AdminLayoutProps ){
+  function( ){
     return ( <>
       <GlobalStyles
         styles={{

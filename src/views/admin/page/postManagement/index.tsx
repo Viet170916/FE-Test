@@ -1,10 +1,9 @@
-import Loading from "@/components/core/Loading.tsx";
-import { IAny } from "@/helpers/Interfaces/Any.ts";
-import { IPostResponse } from "@/helpers/Interfaces/ipost.interface.ts";
-import { useLazyGetPostsQuery } from "@/redux/services/apis/post.ts";
-import PostTable from "@/views/admin/page/postManagement/Table/PostTable.tsx";
-import { Label } from "@mui/icons-material";
-import { Box, Modal, TextareaAutosize, TextField } from "@mui/material";
+import Loading from "$/components/core/Loading.tsx";
+import { IAny } from "$/helpers/Interfaces/Any.ts";
+import { IPostResponse } from "$/helpers/Interfaces/ipost.interface.ts";
+import { useLazyGetPostsQuery } from "$/redux/services/apis/post.ts";
+import PostTable from "$/views/admin/page/postManagement/Table/PostTable.tsx";
+import { Box, Modal} from "@mui/material";
 import InputLabel from "@mui/material/InputLabel";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -24,11 +23,11 @@ const MODAL_STYLE = {
   p: 4,
 };
 
-interface PostManagementPageProps{
-}
+// interface PostManagementPageProps{
+// }
 
 const PostManagementPage: NamedExoticComponent<PostManagementPageProps> = React.memo(
-  function( props: PostManagementPageProps ): ReactNode{
+  function( ): ReactNode{
     const [ viewedPostId, setViewedPostId ] = useState<number>();
     const [ postData, setPostData ] = useState<IPostResponse>();
     const [ trigger, {
